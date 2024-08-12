@@ -1,4 +1,4 @@
-package com.mycompany.atividade4;
+package com.mycompany.progamadorbanco;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -10,14 +10,29 @@ package com.mycompany.atividade4;
  * @author aluno.den
  */
 public class Funcionarios {
+    
+    private String codigoFuncionario;
     private String nome;
-    private String funcao;
-    private double salario;
+    private String endereco;
+    private String telefone;
+    private String email;
+    private ContaBancaria contaBanco;
 
-    public Funcionarios(String nome, String funcao, double salario) {
+    public Funcionarios(String codigoFuncionario, String nome, String endereco, String telefone, String email, ContaBancaria contaBanco) {
+        this.codigoFuncionario = codigoFuncionario;
         this.nome = nome;
-        this.funcao = funcao;
-        this.salario = salario;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.email = email;
+        this.contaBanco = contaBanco;
+    }
+
+    public String getCodigoFuncionario() {
+        return codigoFuncionario;
+    }
+
+    public void setCodigoFuncionario(String codigoFuncionario) {
+        this.codigoFuncionario = codigoFuncionario;
     }
 
     public String getNome() {
@@ -28,21 +43,38 @@ public class Funcionarios {
         this.nome = nome;
     }
 
-    public String getFuncao() {
-        return funcao;
+    public String getEndereco() {
+        return endereco;
     }
 
-    public void setFuncao(String funcao) {
-        this.funcao = funcao;
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
-    public double getSalario() {
-        return salario;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setSalario(double salario) {
-        this.salario = salario;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public ContaBancaria getContaBanco() {
+        return contaBanco;
+    }
+
+    public void setContaBanco(ContaBancaria contaBanco) {
+        this.contaBanco = contaBanco;
+    }
+   
     
     
 }
