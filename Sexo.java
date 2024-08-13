@@ -9,7 +9,18 @@ package com.mycompany.principalfuncionarios;
  * @author aluno.den
  */
 public enum Sexo {
-    MASCULINA,
-    FEMININO;
+    MASCULINA("Masculino"),
+    FEMININO("Feminino");
+
+    String texto;
+
+    private Sexo(String texto) {
+        this.texto = texto;
+    }
+
+    public String getTexto() {
+        return texto;
+    }
+    
     
 }

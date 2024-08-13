@@ -15,8 +15,8 @@ public class PrincipalFuncionarios {
        
         System.out.println("Matricula: "+funcionario.getId());
         System.out.println("Nome: "+funcionario.getNome());
-        System.out.println("Sexo: "+funcionario.getSexo());
-        System.out.println("Setor: "+funcionario.getSetor());
+        System.out.println("Sexo: "+funcionario.getSexo().getTexto());
+        System.out.println("Setor: "+funcionario.getSetor().getTexto());
            
     }
 }
