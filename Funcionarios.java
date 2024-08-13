@@ -1,38 +1,45 @@
-package com.mycompany.progamadorbanco;
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+package com.mycompany.principalfuncionarios;
 
 /**
  *
  * @author aluno.den
  */
 public class Funcionarios {
-    
-    private String codigoFuncionario;
+   
+    private int id;
     private String nome;
-    private String endereco;
-    private String telefone;
-    private String email;
-    private ContaBancaria contaBanco;
+    private double salario;
+    private Setor setor;
+    private Sexo sexo;
+    private int idade;
 
-    public Funcionarios(String codigoFuncionario, String nome, String endereco, String telefone, String email, ContaBancaria contaBanco) {
-        this.codigoFuncionario = codigoFuncionario;
+    public Funcionarios(int id, String nome, double salario, Setor setor, Sexo sexo, int idade) {
+        this.id = id;
         this.nome = nome;
-        this.endereco = endereco;
-        this.telefone = telefone;
-        this.email = email;
-        this.contaBanco = contaBanco;
+        this.salario = salario;
+        this.setor = setor;
+        this.sexo = sexo;
+        this.idade = idade;
     }
 
-    public String getCodigoFuncionario() {
-        return codigoFuncionario;
+    public int getIdade() {
+        return idade;
     }
 
-    public void setCodigoFuncionario(String codigoFuncionario) {
-        this.codigoFuncionario = codigoFuncionario;
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -43,38 +50,29 @@ public class Funcionarios {
         this.nome = nome;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public double getSalario() {
+        return salario;
     }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public Setor getSetor() {
+        return setor;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setSetor(Setor setor) {
+        this.setor = setor;
     }
 
-    public String getEmail() {
-        return email;
+    public Sexo getSexo() {
+        return sexo;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setSexo(Sexo sexo) {
+        this.sexo = sexo;
     }
-
-    public ContaBancaria getContaBanco() {
-        return contaBanco;
-    }
-
-    public void setContaBanco(ContaBancaria contaBanco) {
-        this.contaBanco = contaBanco;
-    }
-   
-    
+        
     
 }
