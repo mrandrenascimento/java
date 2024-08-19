@@ -31,8 +31,7 @@ public class  Juridica extends Familia_Pessoa{
     @Override
     public String toString() {
         return "\nDados Pessoa Juridica: " +
-                "\nNome: " + super.nome +
-                "\nTelefone: " + super.telefone +
+                super.toString() + //para não ficar precisando colocar os dados na familia ex: nome, cpf, rg, salario etc, ´so colocar um super toString() conforma atividade
                 "\nCNPJ: "+ cnpj+
                 "\nInscrição Estadual:"+inscricao_Estadual;
     }

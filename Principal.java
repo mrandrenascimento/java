@@ -15,8 +15,8 @@ public class Principal {
         Fisica pessoa_Fisica= new Fisica("02312", "325", "15192154", "Lourds", "4512545");
         Juridica Pessoa_Juridica =new Juridica("121212", "1212124", "Joana", "784113");
         
-        System.out.println(pessoa_Fisica);
-        System.out.println(Pessoa_Juridica);
+        System.out.println(pessoa_Fisica.toString());
+        System.out.println(Pessoa_Juridica.toString());
             
     }
 }
