@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.principal_projeto;
+package com.mycompany.principal;
 
 /**
  *
@@ -10,20 +10,16 @@ package com.mycompany.principal_projeto;
  */
 public abstract class Pessoa {
     
-    protected int id;
     protected String nome;
     protected String telefone;
+    protected String email;
     protected Endereco endereco;
 
-    public Pessoa(int id, String nome, String telefone, Endereco endereco) {
-        this.id = id;
+    public Pessoa(String nome, String telefone, String email, Endereco endereco) {
         this.nome = nome;
         this.telefone = telefone;
+        this.email = email;
         this.endereco = endereco;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getNome() {
@@ -34,16 +30,12 @@ public abstract class Pessoa {
         return telefone;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
     public Endereco getEndereco() {
         return endereco;
     }
-
-    @Override
-    public String toString() {
-        return "Dados Pessoa" +
-                super.toString();
-                
-    }
     
-        
 }

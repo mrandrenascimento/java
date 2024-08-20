@@ -8,16 +8,16 @@ package com.mycompany.principal;
  *
  * @author aluno.den
  */
-public enum Sexo {
+public enum Estando_Civil {
+    SOLTEIRO("Solteiro"),
+    CASADO("Casado"), 
+    SEPARADO("Separado"),
+    DIVORCIADO("Divorciado"),
+    VIUVO("Viuvo");
     
-    MASCULINO('M',"Masculino"),
-    FEMININO('F',"Feminino");
-    
-    private char caractere;
     private String texto;
 
-    private Sexo(char caractere, String texto) {
-        this.caractere = caractere;
+    private Estando_Civil(String texto) {
         this.texto = texto;
     }
 
@@ -28,15 +28,6 @@ public enum Sexo {
     public void setTexto(String texto) {
         this.texto = texto;
     }
-
-    public char getCaractere() {
-        return caractere;
-    }
-
-    public void setCaractere(char caractere) {
-        this.caractere = caractere;
-    }
-    
     
     
 }

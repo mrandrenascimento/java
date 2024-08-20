@@ -2,23 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.principal_projeto;
+package com.mycompany.principal;
 
 /**
  *
  * @author aluno.den
  */
-public  class Endereco extends Pessoa{
-    
-    protected  String logradouro;
-    protected  String numero;
-    protected  String complemento;
-    protected  String cep;
-    protected  String cidade;
-    protected Unidade_Federativa uf;
+public class Endereco {
+    private String logradouro;
+    private String numero;
+    private String complemento;
+    private String cep;
+    private String cidade;
+    private Unidade_Federetiva uf;
 
-    public Endereco(String logradouro, String numero, String complemento, String cep, String cidade, Unidade_Federativa uf, int id, String nome, String telefone, Endereco endereco) {
-        super(id, nome, telefone, endereco);
+    public Endereco(String logradouro, String numero, String complemento, String cep, String cidade, Unidade_Federetiva uf) {
         this.logradouro = logradouro;
         this.numero = numero;
         this.complemento = complemento;
@@ -27,35 +25,59 @@ public  class Endereco extends Pessoa{
         this.uf = uf;
     }
 
+    public Unidade_Federetiva getUf() {
+        return uf;
+    }
+
+    public void setUf(Unidade_Federetiva uf) {
+        this.uf = uf;
+    }
+
     public String getLogradouro() {
         return logradouro;
+    }
+
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
     }
 
     public String getNumero() {
         return numero;
     }
 
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
     public String getComplemento() {
         return complemento;
+    }
+
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
     }
 
     public String getCep() {
         return cep;
     }
 
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
     public String getCidade() {
         return cidade;
     }
 
-    public Unidade_Federativa getUf() {
-        return uf;
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
     }
 
     @Override
     public String toString() {
-        return "Endereco{" + "logradouro=" + logradouro + ", numero=" + numero + ", complemento=" + complemento + ", cep=" + cep + ", cidade=" + cidade + ", uf=" + uf.getTexto() + '}';
+        return " Endereço " +
+                super.toString()+
+                "\nUnidade Federativa" + uf;
     }
-
-   
-
+     
 }
