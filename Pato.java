@@ -8,16 +8,16 @@ package com.mycompany.principal1;
  *
  * @author aluno.den
  */
-public class Cachorro implements Animais{
+public class Pato implements Animais{
 
     @Override
     public String emitirSons() {
-        return "Auuu!";
+        return "hghfg1";
     }
 
     @Override
     public String comer() {
-        return "Ração";
+        return "Peixe";
     }
     
 }
