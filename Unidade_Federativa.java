@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Enum.java to edit this template
  */
-package com.mycompany.principal_projeto;
+package com.mycompany.principal_1_27_08_2024;
 
 /**
  *
@@ -11,13 +11,13 @@ package com.mycompany.principal_projeto;
 public enum Unidade_Federativa {
     BAHIA("Bahia","BA"),
     SAO_PAULO("São Paulo","SP"),
-    RIO_DE_JANEIRO("Rio de Janeiro", "RJ");
+    RIO_DE_JANEIRO("Rio de Janeito","RJ");
     
-    private String texto;
+    private String nome;
     private String sigla;
 
-    private Unidade_Federativa(String texto, String sigla) {
-        this.texto = texto;
+    private Unidade_Federativa(String nome, String sigla) {
+        this.nome = nome;
         this.sigla = sigla;
     }
 
@@ -29,14 +29,13 @@ public enum Unidade_Federativa {
         this.sigla = sigla;
     }
 
-    public String getTexto() {
-        return texto;
+    public String getNome() {
+        return nome;
     }
 
-    public void setTexto(String texto) {
-        this.texto = texto;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
-    
     
     
 }

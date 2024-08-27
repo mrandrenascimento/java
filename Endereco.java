@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.principal;
+package com.mycompany.principal_1_27_08_2024;
 
 /**
  *
@@ -14,9 +14,9 @@ public class Endereco {
     private String complemento;
     private String cep;
     private String cidade;
-    private Unidade_Federetiva uf;
+    private Unidade_Federativa uf;
 
-    public Endereco(String logradouro, String numero, String complemento, String cep, String cidade, Unidade_Federetiva uf) {
+    public Endereco(String logradouro, String numero, String complemento, String cep, String cidade, Unidade_Federativa uf) {
         this.logradouro = logradouro;
         this.numero = numero;
         this.complemento = complemento;
@@ -25,11 +25,11 @@ public class Endereco {
         this.uf = uf;
     }
 
-    public Unidade_Federetiva getUf() {
+    public Unidade_Federativa getUf() {
         return uf;
     }
 
-    public void setUf(Unidade_Federetiva uf) {
+    public void setUf(Unidade_Federativa uf) {
         this.uf = uf;
     }
 
@@ -72,12 +72,6 @@ public class Endereco {
     public void setCidade(String cidade) {
         this.cidade = cidade;
     }
-
-    @Override
-    public String toString() {
-        return " Endereço " +
-                super.toString()+
-                "\nUnidade Federativa" + uf;
-    }
-     
+    
+    
 }

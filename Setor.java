@@ -2,29 +2,33 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Enum.java to edit this template
  */
-package com.mycompany.principalfuncionarios;
+package com.mycompany.principal_1_27_08_2024;
 
 /**
  *
  * @author aluno.den
  */
 public enum Setor {
-    
-    FINANCEIRO("Financeiro"),
+    ENGENHARIA("Engenheiro"),
+    JURIDICO("Juridico"),
     RECURSOS_HUMANOS("Recursos Humanos"),
-    VENDAS("Vendas"),
-    MARKETING("Marketing");
+    MARKETING("Marketing"),
+    OPERACOES("Operações");
     
-    private String texto;
+    private String nome;
 
-    private Setor(String texto) {
-        this.texto = texto;
+    private Setor(String nome) {
+        this.nome = nome;
     }
 
-    public String getTexto() {
-        return texto;
+    public String getNome() {
+        return nome;
     }
- 
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
     
-        
+    
+    
 }
